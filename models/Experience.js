@@ -5,7 +5,8 @@ const ExperienceSchema = new mongoose.Schema({
     position: String,
     date: String,
     description: String,
-    showInCV: Boolean
+    showInCV: Boolean,
+    image: String,
 });
 
 module.exports = mongoose.models.Experience || mongoose.model("Experience", ExperienceSchema, "experience");

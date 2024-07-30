@@ -50,7 +50,7 @@ const addWork = [removeSpaces, (req, response) => {
     description: req.body.description,
     technologies: req.body.technologies,
     image: image,
-    link: req.body.link
+    // link: req.body.link
   };
   Work.create(myobj).then(res => {
     response.json(res);
@@ -85,7 +85,7 @@ const updateWork = [isAuthenticated, removeSpaces, async (req, response) => {
       description: req.body.description,
       technologies: req.body.technologies,
       image: image ? image : oldWork.image,
-      link: req.body.link
+      // link: req.body.link
     },
   };
   Work
